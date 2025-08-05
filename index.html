@@ -57,18 +57,22 @@
       color: #cccccc;
       margin-top: 10px;
     }
-    .insta-bubble {
+    .bubble-container {
       margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .bubble {
       background-color: rgba(255, 255, 255, 0.1);
       padding: 15px;
       border-radius: 50%;
-      display: inline-block;
       transition: background 0.3s;
     }
-    .insta-bubble:hover {
+    .bubble:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
-    .insta-icon {
+    .icon {
       width: 40px;
       height: 40px;
     }
@@ -79,9 +83,14 @@
   <div class="container">
     <div class="logo-text">La Favorite</div>
     <div class="subtitle">Bijouterie & Parfumerie</div>
-    <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="insta-bubble">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
-    </a>
+    <div class="bubble-container">
+      <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
+      </a>
+      <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
+      </a>
+    </div>
   </div>
 </body>
 </html>
