@@ -9,7 +9,7 @@
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       background: repeating-linear-gradient(
         90deg,
         #1a1a1a,
@@ -17,30 +17,51 @@
         #2a2a2a 40px,
         #2a2a2a 80px
       );
+      font-family: 'Georgia', serif;
     }
-    .logo-container {
+    .container {
+      margin-top: 60px;
       text-align: center;
     }
     .logo-text {
       font-family: 'Great Vibes', cursive;
       font-size: 64px;
-      color: #d4af37; /* doré */
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      font-style: italic;
+      background: linear-gradient(to right, #d4af37, #fff8dc, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     }
     .subtitle {
-      font-family: 'Georgia', serif;
       font-size: 18px;
-      color: #ffffff;
-      margin-top: -15px;
-      letter-spacing: 1px;
+      color: #cccccc; /* gris très clair */
+      margin-top: -10px;
+    }
+    .insta-bubble {
+      margin-top: 60px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .insta-bubble:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .insta-icon {
+      width: 40px;
+      height: 40px;
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="logo-container">
+  <div class="container">
     <div class="logo-text">La Favorite</div>
     <div class="subtitle">Bijouterie & Parfumerie</div>
+    <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="insta-bubble">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
+    </a>
   </div>
 </body>
 </html>
