@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <title>La Favorite</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       height: 100vh;
+      font-family: 'Georgia', serif;
       background: repeating-linear-gradient(
         90deg,
-        #000,
-        #000 50px,
-        #444 50px,
-        #444 100px
+        #000 0px,
+        #000 33.33vw,
+        #444 33.33vw,
+        #444 66.66vw,
+        #000 66.66vw,
+        #000 100vw
       );
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       padding-top: 60px;
-      font-family: 'Georgia', serif;
     }
 
     .logo-container {
@@ -33,17 +36,22 @@
       background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: shine 3s infinite linear;
+      background-size: 200% auto;
+      animation: shine 4s linear infinite;
     }
 
     @keyframes shine {
-      0% { background-position: 0% }
-      100% { background-position: 200% }
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
     }
 
     .subtext {
       font-size: 18px;
-      color: #cccccc;
+      color: #dddddd;
       letter-spacing: 1px;
     }
 
