@@ -2,123 +2,100 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Favorite</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
     body {
       margin: 0;
       padding: 0;
+      background: url('fond.jpg') center/cover no-repeat;
+      font-family: 'Cinzel', serif;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Assombri le fond */
       min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 24px; /* Taille réduite */
+      padding: 10px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background-color: rgba(0, 0, 0, 0.3);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    p.info {
+      font-size: 14px; /* Texte plus petit */
+      padding: 5px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      margin: 5px 0;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: repeating-linear-gradient(
-        90deg,
-        #1a1a1a,
-        #1a1a1a 40px,
-        #2a2a2a 40px,
-        #2a2a2a 80px
-      );
-      font-family: 'Georgia', serif;
+      backdrop-filter: blur(5px);
     }
-    .container {
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    .logo-text {
-      font-family: 'Great Vibes', cursive;
-      font-size: 12vw;
-      font-style: italic;
-      background: linear-gradient(
-        120deg,
-        #c59d00 0%,
-        #ffd700 30%,
-        #fff5cc 50%,
-        #ffd700 70%,
-        #c59d00 100%
-      );
-      background-size: 300% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: sunlightPass 5s ease-in-out infinite;
-      text-shadow: none;
-      margin: 0 auto;
-      padding: 0 10px;
-    }
-    @keyframes sunlightPass {
-      0% { background-position: 0% center; }
-      50% { background-position: 100% center; }
-      100% { background-position: 0% center; }
-    }
-    .subtitle {
-      font-size: 3.2vw;
-      color: #cccccc;
-      margin-top: 10px;
-    }
-    .bubble-container {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    .bubble {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 50%;
-      transition: background 0.3s;
-    }
-    .bubble:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-    .icon {
-      width: 40px;
-      height: 40px;
-    }
-    .info {
-      margin-top: 30px;
-      font-size: 2.8vw; /* plus petit */
-      line-height: 1.4;
-      color: transparent;
-      -webkit-text-stroke: 0.4px #cccccc; /* contour clair */
-    }
-    .info a {
-      color: transparent;
-      -webkit-text-stroke: 0.4px #cccccc;
-      text-decoration: none;
-    }
-    .info a:hover {
-      text-decoration: underline;
+
+    .icon img {
+      width: 30px;
+      height: 30px;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="logo-text">La Favorite</div>
-    <div class="subtitle">Bijouterie & Parfumerie</div>
-    <div class="bubble-container">
-      <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
-      </a>
-      <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
-      </a>
-      <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
-      </a>
-    </div>
-    <div class="info">
-      Bijoux de créateurs<br>
-      Accessoires<br>
-      Parfums d'exception<br>
-      <a href="https://maps.google.com/?q=20+rue+du+change+37000+Tours" target="_blank">
-        20 rue du Change, 37000 Tours
-      </a><br>
-      Téléphone: <a href="tel:0247665650">02.47.66.56.50</a><br>
-      Portable: <a href="tel:0683366716">06.83.36.67.16</a>
-    </div>
+  <div class="overlay">
+    <h1>Bijoux de créateurs</h1>
+    <h1>Accessoires</h1>
+    <h1>Parfums d'exception</h1>
+
+    <p class="info">20 rue du Change, 37000 Tours</p>
+    <p class="info contact">
+      Téléphone : <a href="tel:0247665650">02 47 66 56 50</a><br>
+      Portable : <a href="tel:0683366716">06 83 36 67 16</a>
+    </p>
+  </div>
+
+  <div class="icon">
+    <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank">
+      <img src="facebook-icon.png" alt="Facebook">
+    </a>
+  </div>
+
+  <div class="icon" style="bottom: 90px;">
+    <a href="mailto:Sarl.juliafavorite@gmail.com">
+      <img src="email-icon.png" alt="Email">
+    </a>
   </div>
 </body>
 </html>
