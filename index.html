@@ -2,42 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>La Favorite</title>
+  <title>Fond rayé vertical</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background: repeating-linear-gradient(
         90deg,
-        #1a1a1a,
-        #1a1a1a 40px,
-        #2a2a2a 40px,
-        #2a2a2a 80px
+        #000000,      /* noir */
+        #000000 50px,
+        #444444 50px,
+        #444444 100px,
+        #000000 100px,
+        #000000 150px
       );
     }
-    .logo-text {
-      font-family: 'Great Vibes', cursive;
-      font-size: 48px;
-      color: #d4af37; /* doré */
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    }
-    .subtitle {
-      font-family: 'Georgia', serif;
-      font-size: 16px;
-      color: #ffffff;
-      margin-top: -10px;
-      letter-spacing: 1px;
-    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div>
-    <div class="logo-text">La Favorite</div>
-    <div class="subtitle">Bijouterie & Parfumerie</div>
-  </div>
 </body>
 </html>
