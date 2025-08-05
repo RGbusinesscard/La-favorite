@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>La Favorite</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
@@ -15,7 +15,7 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.5); /* Assombri le fond */
+      background-color: rgba(0, 0, 0, 0.5); 
       min-height: 100vh;
       padding: 20px;
       display: flex;
@@ -25,23 +25,23 @@
     }
 
     h1 {
-      font-size: 24px; /* Taille réduite */
+      font-size: 24px;
       padding: 10px 20px;
       border: 1px solid rgba(255, 255, 255, 0.6);
       background-color: rgba(0, 0, 0, 0.3);
       text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
       border-radius: 8px;
-      margin-bottom: 10px;
+      margin: 8px 0;
     }
 
     p.info {
-      font-size: 14px; /* Texte plus petit */
+      font-size: 14px;
       padding: 5px 10px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 6px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-      margin: 5px 0;
+      margin: 4px 0;
     }
 
     .contact a {
@@ -68,8 +68,12 @@
     }
 
     .icon img {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
+    }
+
+    .icon.email {
+      bottom: 90px;
     }
   </style>
 </head>
@@ -79,20 +83,26 @@
     <h1>Accessoires</h1>
     <h1>Parfums d'exception</h1>
 
-    <p class="info">20 rue du Change, 37000 Tours</p>
+    <p class="info">
+      <a href="https://maps.google.com/?q=20 rue du change 37000 Tours" target="_blank">
+        20 rue du Change, 37000 Tours
+      </a>
+    </p>
     <p class="info contact">
       Téléphone : <a href="tel:0247665650">02 47 66 56 50</a><br>
       Portable : <a href="tel:0683366716">06 83 36 67 16</a>
     </p>
   </div>
 
+  <!-- Facebook Icon -->
   <div class="icon">
     <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank">
       <img src="facebook-icon.png" alt="Facebook">
     </a>
   </div>
 
-  <div class="icon" style="bottom: 90px;">
+  <!-- Email Icon -->
+  <div class="icon email">
     <a href="mailto:Sarl.juliafavorite@gmail.com">
       <img src="email-icon.png" alt="Email">
     </a>
