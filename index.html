@@ -31,16 +31,23 @@
       font-family: 'Great Vibes', cursive;
       font-size: 12vw;
       font-style: italic;
-      background: linear-gradient(90deg, #e6b800, #fff5cc, #e6b800);
-      background-size: 200% auto;
+      background: linear-gradient(
+        120deg,
+        #c59d00 0%,
+        #ffd700 30%,
+        #fff5cc 50%,
+        #ffd700 70%,
+        #c59d00 100%
+      );
+      background-size: 300% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: shineMetal 4s ease-in-out infinite;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      animation: sunlightPass 5s ease-in-out infinite;
+      text-shadow: none;
       margin: 0 auto;
       padding: 0 10px;
     }
-    @keyframes shineMetal {
+    @keyframes sunlightPass {
       0% { background-position: 0% center; }
       50% { background-position: 100% center; }
       100% { background-position: 0% center; }
