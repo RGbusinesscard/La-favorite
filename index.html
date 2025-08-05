@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Favorite</title>
   <style>
     body {
@@ -22,26 +23,30 @@
     .container {
       margin-top: 60px;
       text-align: center;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
     .logo-text {
       font-family: 'Great Vibes', cursive;
-      font-size: 64px;
+      font-size: 10vw; /* responsive taille */
       font-style: italic;
       background: linear-gradient(to right, #d4af37, #fff8dc, #d4af37);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      margin: 0;
     }
     .subtitle {
-      font-size: 18px;
-      color: #cccccc; /* gris très clair */
-      margin-top: -10px;
+      font-size: 4vw;
+      color: #cccccc;
+      margin-top: 5px;
     }
     .insta-bubble {
       margin-top: 40px;
-      background-color: rgba(255, 255, 255, 0.1); /* fond semi-transparent */
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 15px;
-      border-radius: 50%; /* forme ronde */
+      border-radius: 50%;
       display: inline-block;
       transition: background 0.3s;
     }
