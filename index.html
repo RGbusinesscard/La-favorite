@@ -2,23 +2,80 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Fond rayé vertical</title>
+  <title>La Favorite</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
       background: repeating-linear-gradient(
         90deg,
-        #000000,      /* noir */
-        #000000 50px,
-        #444444 50px,
-        #444444 100px,
-        #000000 100px,
-        #000000 150px
+        #000,
+        #000 50px,
+        #444 50px,
+        #444 100px
       );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 60px;
+      font-family: 'Georgia', serif;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-text {
+      font-size: 60px;
+      font-style: italic;
+      background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite linear;
+    }
+
+    @keyframes shine {
+      0% { background-position: 0% }
+      100% { background-position: 200% }
+    }
+
+    .subtext {
+      font-size: 18px;
+      color: #cccccc;
+      letter-spacing: 1px;
+    }
+
+    .instagram-bubble {
+      margin-top: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .instagram-bubble:hover {
+      transform: scale(1.1);
+    }
+
+    .instagram-bubble img {
+      width: 40px;
+      height: 40px;
+      display: block;
     }
   </style>
 </head>
 <body>
+
+  <div class="logo-container">
+    <div class="logo-text">La Favorite</div>
+    <div class="subtext">Bijouterie & Parfumerie</div>
+  </div>
+
+  <a class="instagram-bubble" href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  </a>
+
 </body>
 </html>
