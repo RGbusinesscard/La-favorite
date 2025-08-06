@@ -11,7 +11,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       background: repeating-linear-gradient(
         90deg,
@@ -26,7 +26,7 @@
     .container {
       width: 100%;
       text-align: center;
-      padding: 20px 10px;
+      padding: 20px;
       box-sizing: border-box;
     }
     .logo-text {
@@ -58,23 +58,17 @@
       font-size: 3.2vw;
       color: #cccccc;
       margin-top: 10px;
-      margin-bottom: 20px;
     }
     .bubble-container {
+      margin-top: 40px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-    .bubble-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
     .bubble {
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 10px;
+      padding: 15px;
       border-radius: 50%;
       transition: background 0.3s;
     }
@@ -82,17 +76,15 @@
       background-color: rgba(255, 255, 255, 0.2);
     }
     .icon {
-      width: 30px;
-      height: 30px;
-    }
-    .label {
-      font-size: 4vw;
+      width: 40px;
+      height: 40px;
     }
     .footer {
+      margin-top: auto;
       width: 100%;
       text-align: center;
       font-size: 2vw;
-      padding: 10px 5px;
+      padding: 20px 10px;
       background-color: rgba(0, 0, 0, 0.3);
     }
     .footer a {
@@ -111,30 +103,18 @@
     <div class="logo-text">La Favorite</div>
     <div class="subtitle">Bijoux de créateurs, Accessoires, Parfums d'exception</div>
     <div class="bubble-container">
-      <div class="bubble-item">
-        <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
-        </a>
-        <span class="label">Instagram</span>
-      </div>
-      <div class="bubble-item">
-        <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
-        </a>
-        <span class="label">Facebook</span>
-      </div>
-      <div class="bubble-item">
-        <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
-        </a>
-        <span class="label">Mail</span>
-      </div>
-      <div class="bubble-item">
-        <a href="https://www.linkedin.com/in/ju-mrl-4694091a0" target="_blank" class="bubble">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">
-        </a>
-        <span class="label">LinkedIn</span>
-      </div>
+      <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
+      </a>
+      <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
+      </a>
+      <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
+      </a>
+      <a href="https://www.linkedin.com/in/ju-mrl-4694091a0" target="_blank" class="bubble">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">
+      </a>
     </div>
   </div>
   <div class="footer">
