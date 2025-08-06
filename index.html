@@ -11,7 +11,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
       background: repeating-linear-gradient(
         90deg,
@@ -24,10 +23,8 @@
       color: #cccccc;
     }
     .container {
-      width: 100%;
       text-align: center;
       padding: 20px 10px;
-      box-sizing: border-box;
     }
     .logo-text {
       font-family: 'Great Vibes', cursive;
@@ -45,7 +42,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: sunlightPass 5s ease-in-out infinite;
-      text-shadow: none;
       margin: 0 auto;
       padding: 0 10px;
     }
@@ -61,11 +57,10 @@
       margin-bottom: 15px;
     }
     .bubble-container {
-      margin-top: 30px;
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
       margin-bottom: 40px;
     }
     .bubble {
@@ -82,11 +77,10 @@
       height: 40px;
     }
     .footer {
-      margin-bottom: 6vh; /* Footer est plus en bas mais pas collé au bord */
       width: 100%;
       text-align: center;
       font-size: 2vw;
-      padding: 14px 10px;
+      padding: 15px 10px;
       background-color: rgba(0, 0, 0, 0.3);
     }
     .footer a {
@@ -109,21 +103,23 @@
   <div class="container">
     <div class="logo-text">La Favorite</div>
     <div class="subtitle">Bijoux de créateurs, Accessoires, Parfums d'exception</div>
-    <div class="bubble-container">
-      <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
-      </a>
-      <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
-      </a>
-      <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
-      </a>
-      <a href="https://www.linkedin.com/in/ju-mrl-4694091a0" target="_blank" class="bubble">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">
-      </a>
-    </div>
   </div>
+
+  <div class="bubble-container">
+    <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
+    </a>
+    <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
+    </a>
+    <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/ju-mrl-4694091a0" target="_blank" class="bubble">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">
+    </a>
+  </div>
+
   <div class="footer">
     <div>
       <a href="https://maps.google.com/?q=20+rue+du+change+37000+Tours" target="_blank">20 rue du change, 37000 Tours</a> |
