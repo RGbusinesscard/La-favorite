@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La Favorite</title>
   <style>
     body {
@@ -11,6 +11,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       background: repeating-linear-gradient(
         90deg,
@@ -22,10 +23,14 @@
       font-family: 'Georgia', serif;
       color: #cccccc;
     }
+
     .container {
+      width: 100%;
       text-align: center;
-      padding: 20px 10px;
+      padding: 20px;
+      box-sizing: border-box;
     }
+
     .logo-text {
       font-family: 'Great Vibes', cursive;
       font-size: 12vw;
@@ -45,92 +50,130 @@
       margin: 0 auto;
       padding: 0 10px;
     }
+
     @keyframes sunlightPass {
-      0% { background-position: 0% center; }
-      50% { background-position: 100% center; }
-      100% { background-position: 0% center; }
+      0% {
+        background-position: 0% center;
+      }
+      50% {
+        background-position: 100% center;
+      }
+      100% {
+        background-position: 0% center;
+      }
     }
+
     .subtitle {
       font-size: 3.2vw;
       color: #cccccc;
       margin-top: 10px;
-      margin-bottom: 15px;
     }
+
     .bubble-container {
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 15px;
-      margin-bottom: 40px;
     }
+
     .bubble {
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 15px;
+      padding: 12px;
       border-radius: 50%;
       transition: background 0.3s;
     }
+
     .bubble:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
+
     .icon {
       width: 40px;
       height: 40px;
     }
+
     .footer {
+      margin-top: 50px;
       width: 100%;
       text-align: center;
       font-size: 2vw;
-      padding: 15px 10px;
+      padding: 20px 10px;
       background-color: rgba(0, 0, 0, 0.3);
     }
+
     .footer a {
       color: #cccccc;
       text-decoration: none;
       transition: color 0.3s;
     }
+
     .footer a:hover {
       color: #ffffff;
     }
-    .hours {
-      margin-top: 8px;
-      font-size: 1.8vw;
-      color: #cccccc;
-    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <div class="container">
     <div class="logo-text">La Favorite</div>
-    <div class="subtitle">Bijoux de créateurs, Accessoires, Parfums d'exception</div>
-  </div>
+    <div class="subtitle">
+      Bijoux de créateurs, Accessoires, Parfums d'exception
+    </div>
 
-  <div class="bubble-container">
-    <a href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA==" target="_blank" class="bubble">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
-    </a>
-    <a href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr" target="_blank" class="bubble">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="icon">
-    </a>
-    <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
-    </a>
-    <a href="https://www.linkedin.com/in/ju-mrl-4694091a0" target="_blank" class="bubble">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">
-    </a>
+    <div class="bubble-container">
+      <a
+        href="https://www.instagram.com/lafavoritetours?igsh=MW1hOWYwbXJ4bGg0ZA=="
+        target="_blank"
+        class="bubble"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+          alt="Instagram"
+          class="icon"
+        />
+      </a>
+      <a
+        href="https://www.facebook.com/share/1BchCJmxUQ/?mibextid=wwXIfr"
+        target="_blank"
+        class="bubble"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook"
+          class="icon"
+        />
+      </a>
+      <a href="mailto:sarl.juliafavorite@gmail.com" class="bubble">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"
+          alt="Email"
+          class="icon"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ju-mrl-4694091a0"
+        target="_blank"
+        class="bubble"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+          alt="LinkedIn"
+          class="icon"
+        />
+      </a>
+    </div>
   </div>
 
   <div class="footer">
-    <div>
-      <a href="https://maps.google.com/?q=20+rue+du+change+37000+Tours" target="_blank">20 rue du change, 37000 Tours</a> |
-      <a href="tel:0247665650">02.47.66.56.50</a> |
-      <a href="tel:0683366716">06.83.36.67.16</a>
-    </div>
-    <div class="hours">
-      Mardi à Vendredi : 11h00–12h30 / 14h30–18h30 <br>
-      Samedi : 11h00–13h00 / 14h30–19h00 <br>
-      Dimanche et Lundi : Fermé
-    </div>
+    <a href="https://maps.google.com/?q=20+rue+du+change+37000+Tours" target="_blank">20 rue du change, 37000 Tours</a>
+    |
+    <a href="tel:0247665650">02.47.66.56.50</a>
+    |
+    <a href="tel:0683366716">06.83.36.67.16</a>
   </div>
 </body>
 </html>
